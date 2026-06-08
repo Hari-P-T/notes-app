@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Notes — System Design</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">System Design Notes</div>
+    <div class="tools">
+      <input id="search" placeholder="Search topics or subtopics..." />
+      <button id="importBtn" title="Import attached system-design.json">Import sample JSON</button>
+      <button id="clearBtn" title="Clear notes in database">Clear DB</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <div class="controls">
+        <button id="addRoot">Add Root Topic</button>
+      </div>
+      <div id="tree" class="tree"></div>
+    </aside>
+
+    <section class="detail">
+      <div id="detailEmpty" class="empty">Select a topic or subtopic to view/edit details.</div>
+      <div id="detailPanel" class="panel hidden">
+        <div class="panel-header">
+          <input id="detailTitle" />
+          <div class="panel-actions">
+            <button id="saveTitle">Save</button>
+            <button id="deleteNode">Delete</button>
+          </div>
+        </div>
+        <label>Notes</label>
+        <textarea id="detailNotes" rows="6" placeholder="Optional notes..."></textarea>
+        <label>Attachments</label>
+        <div id="attachments" class="attachments"></div>
+        <div class="attachment-row">
+          <input id="attachmentUrl" placeholder="Attachment URL" />
+          <button id="addAttachment">Add</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">Realtime DB URL: <a href="https://sysdes-23c1b-default-rtdb.firebaseio.com/" target="_blank">sysdes-23c1b-default-rtdb</a></footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

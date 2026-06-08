@@ -1,0 +1,526 @@
+{
+  "System Design Foundations": {
+    "Requirements & Design Thinking": [
+      "Functional requirements",
+      "Non-functional requirements",
+      "High-Level Design (HLD)",
+      "Low-Level Design (LLD)",
+      "API-first design",
+      "Capacity estimation (QPS/RPS)",
+      "Peak vs average load",
+      "Load characteristics & traffic patterns",
+      "Bottleneck analysis",
+      "Performance tuning"
+    ],
+    "Performance & Reliability Fundamentals": [
+      "Throughput",
+      "Latency (p90, p95, p99)",
+      "Availability",
+      "Bandwidth",
+      "SLA / SLO / SLI",
+      "Error budgets",
+      "Fault tolerance",
+      "Redundancy",
+      "High availability (HA)",
+      "Active-active vs Active-passive",
+      "Failover & fallback"
+    ],
+    "Consistency & Data Guarantees": [
+      "ACID vs BASE",
+      "Isolation levels (Read committed, Repeatable read, Serializable)",
+      "Strong / Eventual / Causal consistency",
+      "Idempotency & idempotent keys",
+      "Distributed transactions",
+      "Two-phase commit (2PC)",
+      "Sagas",
+      "MVCC",
+      "BASE vs ACID tradeoffs (distributed DB context)"
+    ],
+    "Consistency Model": [
+      "Strong consistency (Linearizability)",
+      "Sequential consistency",
+      "Causal consistency",
+      "Eventual consistency",
+      "Read-your-writes consistency",
+      "Monotonic reads",
+      "Monotonic writes",
+      "Session consistency",
+      "Snapshot isolation",
+      "Serializability",
+      "Bounded staleness"
+    ],
+    "Distributed Theory": [
+      "CAP theorem",
+      "PACELC theorem",
+      "CAP vs PACELC comparison",
+      "Network partitions",
+      "Split brain problem"
+    ]
+  },
+  "Networking & Protocol Stack": {
+    "Core Networking": [
+      "IP addressing",
+      "Loopback (127.0.0.0/8)",
+      "ARP",
+      "DHCP",
+      "NAT",
+      "Public vs private networks",
+      "Firewalls",
+      "Reverse DNS lookup",
+      "MX / SPF / DKIM / DMARC",
+      "sudo nano /etc/hosts"
+    ],
+    "Transport Layer": [
+      "TCP (3-way handshake)",
+      "UDP",
+      "TCP vs QUIC",
+      "Stream vs Datagram sockets",
+      "Number of sockets per machine",
+      "Inter-process communication (IPC)"
+    ],
+    "HTTP & Web": [
+      "HTTP / HTTPS",
+      "HTTP/2",
+      "HTTP/3",
+      "gRPC over HTTP/2",
+      "HTTP methods",
+      "HTTP headers",
+      "Keep-alive",
+      "HTTP tunneling",
+      "URI vs URL",
+      "HATEOAS",
+      "CORS",
+      "Browser storage",
+      "CDN invalidation strategy"
+    ],
+    "Real-Time & Media": [
+      "WebRTC",
+      "RTMP",
+      "DASH",
+      "Session Description Protocol (SDP)",
+      "STUN",
+      "Jump server (Bastion)"
+    ]
+  },
+  "Architecture Styles": {
+    "Structural Patterns": [
+      "Monolith",
+      "Modular monolith",
+      "Microservices",
+      "SOA",
+      "Layered",
+      "Modular architecture",
+      "Multi-tier",
+      "Client-server",
+      "Hexagonal",
+      "Clean architecture",
+      "Serverless"
+    ],
+    "Advanced Architectural Patterns": [
+      "Event-driven architecture",
+      "Fanout architecture",
+      "Peer-to-peer architecture",
+      "BFF (Backend for Frontend)",
+      "Log-based architecture"
+    ]
+  },
+  "Edge, Gateway & Traffic Management": [
+    "Forward proxy",
+    "Reverse proxy",
+    "API Gateway",
+    "CDN",
+    "CDN routing",
+    "Load balancing (L4/L7)",
+    "Load balancing algorithms (static/dynamic)",
+    "Network load balancing",
+    "Service mesh (Istio, Linkerd)",
+    "Sidecar pattern",
+    "Cluster manager"
+  ],
+  "Distributed Systems Internals": {
+    "Core Mechanisms": [
+      "Consistent hashing (DB + Cache)",
+      "Leader election",
+      "Heartbeats",
+      "Failure detection",
+      "Gossip protocol",
+      "Backpressure",
+      "Load shedding",
+      "Distributed scheduling"
+    ],
+    "Consensus & Coordination": [
+      "Paxos",
+      "Raft",
+      "ZAB",
+      "Consensus protocols",
+      "Quorum reads/writes",
+      "Quorum-based locking (Redlock)",
+      "Distributed locks",
+      "Distributed counters",
+      "Vector clocks",
+      "Lamport timestamps",
+      "Global clock sync",
+      "CRDTs"
+    ],
+    "Messaging Guarantees & Myths": [
+      "Idempotent consumers",
+      "Idempotent producers",
+      "Exactly-once myth",
+      "Network partitions in messaging"
+    ]
+  },
+  "Databases & Storage": {
+    "Database Types": [
+      "SQL / NoSQL",
+      "RDBMS",
+      "Document DB",
+      "Key-value",
+      "Columnar",
+      "Graph DB",
+      "Time-series DB",
+      "Search systems",
+      "Data warehouse / OLAP",
+      "ETL"
+    ],
+    "Storage & Infrastructure": [
+      "Blob/Object storage",
+      "Block storage",
+      "Distributed file systems",
+      "Storage formats (JSON, BSON, Parquet, Avro)",
+      "WAL",
+      "Materialized views",
+      "Schema migration",
+      "Conflict resolution",
+      "Read replicas",
+      "Connection pooling"
+    ],
+    "Hardware storage": {
+      "File storage system types": [
+        "Ext vs fat vs ntfs vs hfs"
+      ],
+      "Hardware types & speed": [
+        "HDD vs SSD vs NVMe",
+        "ROM vs RAM vs Cache vs Registers",
+        "SATA vs SAS vs PCIe",
+        "RAID levels (0, 1, 5, 10)"
+      ]
+    },
+    "Scaling & Partitioning": [
+      "Sharding",
+      "Horizontal / Vertical partitioning",
+      "Range / Hash / List partitioning",
+      "Federation",
+      "Rebalancing / Resharding",
+      "Replication (master-slave, multi-leader)",
+      "Replication lag",
+      "Hot vs Cold storage",
+      "Tiered storage",
+      "Erasure coding vs Replication"
+    ],
+    "Indexing & Query Internals": [
+      "Primary vs Secondary indexes",
+      "B-Tree / B+Tree",
+      "LSM Trees",
+      "Tries",
+      "Hash indexes",
+      "Composite indexes",
+      "Covering indexes",
+      "Query planning"
+    ]
+  },
+  "Caching & Performance Engineering": {
+    "Cache Patterns": [
+      "Cache aside (lazy loading)",
+      "Read-through",
+      "Write-through",
+      "Write-back / Write-behind",
+      "Write-around",
+      "Negative caching",
+      "Cache warming"
+    ],
+    "Cache Scaling": [
+      "TTL eviction",
+      "LRU / LFU / FIFO",
+      "Cache invalidation",
+      "Cache coherence",
+      "Cache stampede",
+      "Thundering herd",
+      "Consistent hashing (cache clusters)",
+      "Local vs Distributed cache"
+    ],
+    "Performance Internals": [
+      "Bloom filters",
+      "HyperLogLog",
+      "Cardinality estimation",
+      "Context switching",
+      "Concurrency vs parallelism",
+      "Event demultiplexing (epoll, kqueue)",
+      "Non-blocking I/O",
+      "Real-time vs batch processing",
+      "MapReduce"
+    ]
+  },
+  "Messaging & Streaming": {
+    "Messaging Systems": [
+      "Kafka",
+      "RabbitMQ",
+      "SQS",
+      "Pulsar",
+      "Pub/Sub",
+      "Event bus",
+      "Dead letter queues",
+      "Retry queues",
+      "Poison message handling",
+      "FIFO vs standard queues"
+    ],
+    "Delivery & Reliability": [
+      "At-most-once",
+      "At-least-once",
+      "Exactly-once",
+      "Idempotent producer",
+      "Idempotent consumer",
+      "Transactional messaging",
+      "Outbox pattern"
+    ],
+    "Stream Processing": [
+      "Stream processing",
+      "Consumer groups",
+      "Window-based rate limiting",
+      "Sliding window rate limiting",
+      "Event sourcing",
+      "Ingestor",
+      "Amazon Kinesis"
+    ]
+  },
+  "Security Architecture": {
+    "Authentication & Authorization": [
+      "JWT",
+      "OAuth2 (Auth code, Client credentials)",
+      "Token refresh",
+      "OpenID Connect",
+      "RBAC / ABAC",
+      "API keys / HMAC",
+      "CSRF token mechanism"
+    ],
+    "Cryptography & Transport Security": [
+      "TLS / SSL",
+      "mTLS",
+      "Certificate rotation",
+      "AES / RSA",
+      "bcrypt / scrypt",
+      "Encryption at rest / transit",
+      "Secure cookies"
+    ],
+    "Application & Network Security": [
+      "SQL injection",
+      "XSS",
+      "CSRF",
+      "Rate limiting",
+      "Dynamic / adaptive throttling",
+      "Firewall rate limiting",
+      "WAF",
+      "DDoS protection",
+      "Zero-trust",
+      "Honeypots",
+      "Audit logging",
+      "GDPR / HIPAA"
+    ]
+  },
+  "Cloud & Infrastructure": {
+    "Containers & Orchestration": [
+      "Docker",
+      "Kubernetes",
+      "Pods / Deployments / StatefulSets",
+      "Ingress",
+      "Sidecar",
+      "ECS",
+      "Graceful shutdown"
+    ],
+    "Deployment & CI/CD": [
+      "CI/CD pipelines",
+      "Blue-green",
+      "Canary",
+      "Rolling updates",
+      "GitOps",
+      "Immutable infrastructure",
+      "Infrastructure drift"
+    ],
+    "Scalability & Global Systems": [
+      "Terraform",
+      "Autoscaling (HPA vs VPA)",
+      "Multi-region",
+      "Multi-cloud",
+      "Edge computing",
+      "Lambda functions",
+      "Coordination systems (Zookeeper, etcd)"
+    ]
+  },
+  "Observability & Reliability Engineering": [
+    "Logging",
+    "Structured logging",
+    "Correlation IDs",
+    "Monitoring",
+    "Metrics",
+    "Tracing",
+    "Distributed tracing",
+    "Golden signals (Latency, Traffic, Errors, Saturation)",
+    "RED vs USE model",
+    "Prometheus",
+    "Grafana",
+    "ELK",
+    "Dynatrace",
+    "Splunk",
+    "Alerting",
+    "SLO-based alerting",
+    "Health checks",
+    "Disaster recovery",
+    "Backup strategies",
+    "RTO / RPO",
+    "Chaos engineering",
+    "Fault injection",
+    "On-call runbooks"
+  ],
+  "Microservices Design Patterns": [
+    "API Gateway Pattern",
+    "Database per Service Pattern",
+    "Circuit Breaker Pattern",
+    "Service Discovery Pattern",
+    "Event Sourcing Pattern",
+    "CQRS Pattern",
+    "Strangler Fig Pattern",
+    "Saga Pattern",
+    "Bulkhead Pattern",
+    "Sidecar vs Ambassador vs Adapter Pattern"
+  ],
+  "Low-Level Design & DDD": {
+    "Core OOP": [
+      "Classes / Objects",
+      "Encapsulation / Inheritance / Polymorphism",
+      "Composition",
+      "SOLID",
+      "DRY / KISS / YAGNI",
+      "DI / IoC",
+      "Immutable objects",
+      "Design by contract"
+    ],
+    "Domain-Driven Design": [
+      "Aggregates",
+      "Value objects",
+      "Repository pattern",
+      "Specification pattern",
+      "Identifying entities",
+      "Modeling enums & constants"
+    ],
+    "API & Compatibility": [
+      "Pagination",
+      "Data transfer object",
+      "Validation",
+      "Error handling",
+      "Logging strategy",
+      "Versioning (URL / Header / Date-based)",
+      "Backward compatibility",
+      "Request compatibility layer",
+      "Response compatibility layer",
+      "Gates behind versioning",
+      "MCP vs A2A"
+    ]
+  },
+  "Concurrency & Parallelism": [
+    "Thread safety",
+    "Mutex",
+    "Semaphores",
+    "Spinlock",
+    "Deadlocks",
+    "Starvation",
+    "Producer-consumer",
+    "Read-write locks",
+    "Thread pools",
+    "Futures / Promises",
+    "Virtual threads",
+    "Actor model",
+    "Reactor pattern",
+    "Scheduler pattern",
+    "Race conditions"
+  ],
+  "Git & Workflow Engineering": [
+    "Git branching strategies",
+    "GitHub flow",
+    "Git Flow",
+    "Trunk-based development",
+    "Feature branches",
+    "Release / Hotfix branches",
+    "Semantic versioning",
+    "Date-based versioning",
+    "Monorepo vs Polyrepo"
+  ],
+  "UML Diagrams": {
+    "Overview": "UML (Unified Modeling Language) diagrams classify into structural and behavioral types; below are common diagram types and key sub-elements/elements for each.",
+    "Types": {
+      "Structural": [
+        "Class Diagram",
+        "Object Diagram",
+        "Component Diagram",
+        "Composite Structure Diagram",
+        "Package Diagram",
+        "Deployment Diagram",
+        "Profile Diagram"
+      ],
+      "Behavioral": [
+        "Use Case Diagram",
+        "Activity Diagram",
+        "State Machine Diagram",
+        "Interaction Overview Diagram",
+        "Timing Diagram"
+      ],
+      "Interaction": [
+        "Sequence Diagram",
+        "Communication Diagram",
+        "Interaction Overview Diagram",
+        "Timing Diagram"
+      ]
+    }
+  }
+  ,
+  "AI & ML Systems": {
+    "RAG & Retrieval Systems": [
+      "Retrieval-Augmented Generation (RAG)",
+      "Vector databases and embedding stores (FAISS, Milvus, Pinecone)",
+      "Embedding generation, versioning and normalization",
+      "Chunking strategies and context windowing",
+      "Retriever + reranker pipelines",
+      "Index freshness, real-time updates and TTL",
+      "Metadata schema and provenance for retrieved items",
+      "Hybrid search: dense + sparse retrieval",
+      "Caching strategies for candidates and responses",
+      "Evaluation metrics: recall@k, MRR, latency"
+    ],
+    "Model Spec & API Contracts": [
+      "Model interface spec: inputs, outputs, token limits",
+      "Prompt spec and canonical prompt templates",
+      "Safety spec: filters, disallowed content, rate limits",
+      "SLA spec: latency, throughput, cost budgets",
+      "Fallback and graceful degradation behaviors",
+      "Determinism controls and randomness seeds",
+      "Telemetry, logging and required observability signals"
+    ],
+    "RAG Architectural Patterns": [
+      "Online RAG vs offline augmentation",
+      "Streaming RAG for long or evolving contexts",
+      "Sharding strategies for vector indexes",
+      "Batching and synchronous vs async retrieval",
+      "Grounding layers and provenance tracking"
+    ],
+    "Evaluation & Spec Testing": [
+      "Ground-truth datasets and synthetic evaluation",
+      "Automated spec tests for prompts and responses",
+      "Regression tests for hallucination and drift",
+      "Canarying, A/B tests and rollout metrics"
+    ],
+    "Security & Privacy": [
+      "PII detection and redaction in retrieved content",
+      "Access controls and tenant isolation for vector DBs",
+      "Encryption at rest/in transit for embeddings and indexes",
+      "Differential privacy and federated options"
+    ]
+  }
+}
